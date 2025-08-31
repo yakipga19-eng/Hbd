@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HBD Adekk FORM GIGI PAKE H</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fe71f52a6-fe6e-4e7a-8862-634e4c59ad3b%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4QZE4I5HUY%252F20250830%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20250830T184237Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D38c5b9414d23b46cbe6134e750aa1ca2a587279ce9ec23f9637e95c9fb1ca31e&sign=YhG4kUdBdXnIE0EdEG8N-_XRwD0QdP1Uux0-3I9eLhM);
+    "
+    class="flex justify-center h-screen items-center"
+  >
+    <div
+      class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-pink-300 rounded-xl text-center animate_animated animate_backInDown m-8 w-80"
+      id="kartu"
+    >
+      <h1 class="text-3xl">Harimu tenan iki Happy Birthday</h1>
+      <h1
+        class="text-4xl text-pink-500 font-bold animate_animated animateswing animatepulse animate_infinite"
+      >
+        Amindya Sekar Effendi
+      </h1>
+      <button
+        class="p-2 bg-pink-600 text-white rounded mt-5 hover:bg-pink-900 transition ease-in w-full animate_animated animatedelay-1s animate_tada"
+        onclick="ubahKartu()"
+      >
+        Klik Disini Ya Adekk
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+      let kartu = document.getElementById("kartu");
+      function ubahKartu() {
+        kartu.innerHTML = `    <h1 class="font-semibold text-wrap animate_animated animate_zoomIn">
+      Sugeng ambal warsa Cah Ayu,Selamat Ulang tahun ya hehe🥳🎉🎉,semoga di umurmu yang sudah 18 tahun iki awakmu iso lebih baik dari sebelumnya ya ,Kuliah e harus tetep SEMANGAT terus pokok e, Semoga di beri Kesehatan Terus,Di Beri Kemudahan di segala urusan Adekk,Semoga di beri umur yang panjang Aamin ,Dan semoga di hari istimewa adek iki semua Doa-Doa adek Di ijabah ALLAH Dan Adek sukses Kedepanya Aamin YaALLAH. Pesen e Mamas,Sholat e ojo sampe Ditinggal,Adek Nggak boleh ngelawan sama orang tua ya jadilah anak yang berbakti, ojo jahat tenan sama adik-adik kamu ya😅 jadilah contoh yang baik untuk adik-adik kamu.Dan kalo bisa seblak e dikurangi🤣 MAAF Mamas nggak iso ngei kado untuk adek🙏🙏🥹
+    </h1>
+    <h2 class="mt-3 animate_animated animate_fadeIn">
+      - Dari : GIGI Pake H -
+    </h2>
+    <button
+      class="p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full animate_animated animatedelay-1s animate_tada"
+      onclick="refresh()"
+    >
+      Tutup
+    </button>
+    `;
+      }
+      function refresh() {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>
